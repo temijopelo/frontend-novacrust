@@ -25,7 +25,7 @@ const Header = () => {
           <Image src={Logo} alt="Logo" width={100} height={40} />
         </Link>
         <div>
-          <ul className="flex gap-8 items-center text-sm font-light">
+          <ul className="hidden md:flex gap-8 items-center text-sm font-light">
             {menuNavigation?.map((item, index) => (
               <li key={index}>
                 <Link className="flex items-center gap-1.5" href={item?.link}>

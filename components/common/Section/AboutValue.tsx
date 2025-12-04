@@ -44,10 +44,10 @@ const AboutValue = () => {
 
   return (
     <div className="bg-[#FFFFFF] ">
-      <div className="w-[90%] mx-auto p-3">
+      <div className="md:w-[90%] mx-auto p-3">
         <div className="flex flex-col items-center max-w-3xl mx-auto pt-6 gap-3">
           <h3 className="text-[32px]">Our Values in Action</h3>
-          <p className="font-montserrat text-[#666666]">
+          <p className="font-montserrat text-center text-[#666666]">
             These principles guide every decision we make and every product we
             build
           </p>

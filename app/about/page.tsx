@@ -4,6 +4,7 @@ import AboutLab from "@/components/common/Section/AboutLab";
 import AboutMission from "@/components/common/Section/AboutMission";
 import AboutNumber from "@/components/common/Section/AboutNumber";
 import AboutValue from "@/components/common/Section/AboutValue";
+import FutureOfWeb3 from "@/components/common/Section/FutureOfWeb3";
 import React from "react";
 
 export default function AboutPage() {
@@ -15,6 +16,7 @@ export default function AboutPage() {
       <AboutNumber />
       <AboutValue />
       <AboutJourney />
+      <FutureOfWeb3 />
     </div>
   );
 }
