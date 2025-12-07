@@ -7,7 +7,7 @@ import FutureOfWeb3 from "@/components/common/Section/FutureOfWeb3";
 export default function Home() {
   return (
     <div>
-      <div className="max-w-[90%] mx-auto grid grid-cols-12 gap-8 px-8 my-5">
+      <div className="max-w-[90%] mx-auto grid grid-cols-12 gap-8  my-5">
         <div className="col-span-full lg:col-span-8">
           <MainContent />
         </div>
