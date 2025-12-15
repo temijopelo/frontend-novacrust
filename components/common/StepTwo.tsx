@@ -16,7 +16,6 @@ const StepTwo = ({
     useCopyToClipboard();
   const { copied: amountCopied, copyToClipboard: copyAmount } =
     useCopyToClipboard();
-  // Each button has its own state ✅
   const walletAddress = "4LiV4YjbxsL6739MKghUd";
   const amountToSend = "100 ETH";
 
