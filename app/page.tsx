@@ -180,28 +180,7 @@ export default function Home() {
           </motion.div>
         )}
 
-        {/* Progress Indicator */}
-        {/* {selectedTab === "cryptoToCash" && currentStep > 1 && (
-          <motion.div
-            initial={{ opacity: 0, y: -10 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 0.1 }}
-            className="flex justify-center gap-2 mt-6 mb-4"
-          >
-            {[1, 2, 3].map((step) => (
-              <motion.div
-                key={step}
-                className={`h-1.5 rounded-full transition-all duration-300 ${
-                  step <= currentStep ? "bg-[#013941] w-12" : "bg-gray-200 w-8"
-                }`}
-                animate={{
-                  scale: step === currentStep ? [1, 1.2, 1] : 1,
-                }}
-                transition={{ duration: 0.3 }}
-              />
-            ))}
-          </motion.div>
-        )} */}
+       
 
         {/* Main Content */}
         <AnimatePresence mode="wait">
