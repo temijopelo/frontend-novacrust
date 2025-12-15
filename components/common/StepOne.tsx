@@ -78,7 +78,7 @@ const StepOne = ({ onNext }: { onNext: (data: any) => void }) => {
             >
               You pay
             </label>
-            <span className="flex items-center">
+            <span className="flex flex-col md:flex-row items-center">
               <input
                 type="number"
                 name="pay"
@@ -95,7 +95,7 @@ const StepOne = ({ onNext }: { onNext: (data: any) => void }) => {
                   setFormdata({ ...formdata, payCurrency: value })
                 }
               >
-                <SelectTrigger className="border-[#E0E0E0] outline-none bg-[#F7F7F7] rounded-full">
+                <SelectTrigger className="border-[#E0E0E0] w-full outline-none bg-[#F7F7F7] rounded-full">
                   <SelectValue placeholder="Select" />
                 </SelectTrigger>
                 <SelectContent className="p-2">
@@ -143,7 +143,7 @@ const StepOne = ({ onNext }: { onNext: (data: any) => void }) => {
             >
               You receive
             </label>
-            <span className="flex items-center">
+            <span className="flex flex-col md:flex-row items-center">
               <input
                 type="number"
                 name="receive"
@@ -160,7 +160,7 @@ const StepOne = ({ onNext }: { onNext: (data: any) => void }) => {
                   setFormdata({ ...formdata, receiveCurrency: value })
                 }
               >
-                <SelectTrigger className="border-[#E0E0E0] outline-none bg-[#F7F7F7] rounded-full">
+                <SelectTrigger className="border-[#E0E0E0] w-full outline-none bg-[#F7F7F7] rounded-full">
                   <SelectValue placeholder="Select" />
                 </SelectTrigger>
                 <SelectContent className="p-2">

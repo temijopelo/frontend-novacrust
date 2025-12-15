@@ -132,12 +132,12 @@ export default function Home() {
   };
 
   return (
-    <div className="flex justify-center items-center h-screen">
+    <div className="flex justify-center items-center w-screen h-screen">
       <motion.div
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="md:w-[640px] md:min-h-[758px] p-5 md:p-12 shadow-lg rounded-[30px] bg-white"
+        className="max-w-sm md:max-w-[640px] md:min-h-[758px] p-[30px] md:p-12 shadow-lg rounded-[30px] bg-white"
       >
         {/* Tab Navigation */}
         {currentStep === 1 && (
@@ -147,7 +147,7 @@ export default function Home() {
             animate="visible"
             className="flex justify-center"
           >
-            <div className="bg-[#F2F2F2] text-[#828282] md:w-[392px] flex flex-col md:flex-row text-[14px] justify-between rounded-full transition-all duration-300 ease-in-out">
+            <div className="bg-[#F2F2F2] text-[#828282] md:w-[392px] flex flex-col md:flex-row text-[14px] justify-between rounded-2xl md:rounded-full transition-all duration-300 ease-in-out">
               {TABS.map((tab) => (
                 <motion.button
                   key={tab.id}
@@ -155,7 +155,7 @@ export default function Home() {
                   whileTap={{ scale: 0.98 }}
                   transition={{ duration: 0.2 }}
                   className={`
-                    relative px-4 py-1.5 rounded-full
+                    relative px-3 py-2 rounded-full
                     transition-colors duration-300
                     ${selectedTab === tab.id ? "text-white" : "text-[#828282]"}
                   `}
@@ -165,13 +165,7 @@ export default function Home() {
                   {selectedTab === tab.id && (
                     <motion.div
                       layoutId="activeTabBackground"
-                      className={`absolute inset-0 bg-[#013941] ${
-                        tab.id === "cashToCrypto"
-                          ? "rounded-full"
-                          : tab.id === "cryptoToFiatLoan"
-                          ? "rounded-b-[100px] md:rounded-full"
-                          : "rounded-t-[100px] md:rounded-full"
-                      } `}
+                      className={`absolute inset-0 bg-[#013941] ${"rounded-full"} `}
                       transition={{
                         type: "spring",
                         stiffness: 500,

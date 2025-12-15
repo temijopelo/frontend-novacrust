@@ -46,6 +46,14 @@
   --radius-xl: calc(var(--radius) + 4px);
 }
 
+* {
+  box-sizing: border-box;
+  font-synthesis: none;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
 :root {
   --radius: 0.625rem;
   --background: oklch(1 0 0);
