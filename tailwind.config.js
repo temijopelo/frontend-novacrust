@@ -26,12 +26,9 @@ module.exports = {
     },
     extend: {
       fontFamily: {
-        // Default sans font
-        sans: ["var(--font-roboto)", "system-ui", "sans-serif"],
-        // Individual font utilities
-        roboto: ["var(--font-roboto)", "sans-serif"],
-        mont: ["var(--font-montserrat)", "sans-serif"],
-        nunito: ["var(--font-nunito)", "sans-serif"],
+        outfit: ["var(--font-outfit)", "sans-serif"],
+        funnel: ["var(--font-funnel)", "sans-serif"],
+        instrument: ["var(--font-instrument)", "sans-serif"],
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
