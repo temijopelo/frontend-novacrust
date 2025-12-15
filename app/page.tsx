@@ -132,12 +132,12 @@ export default function Home() {
   };
 
   return (
-    <div className="flex justify-center items-center w-screen h-screen">
+    <div className="flex justify-center items-center w-screen overflow-auto h-screen">
       <motion.div
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="max-w-sm md:max-w-[640px] md:min-h-[758px] p-[30px] md:p-12 shadow-lg rounded-[30px] bg-white"
+        className="max-w-sm md:max-w-[640px] h-full md:min-h-[758px] p-[30px] md:p-12 shadow-lg rounded-[30px] bg-white"
       >
         {/* Tab Navigation */}
         {currentStep === 1 && (
