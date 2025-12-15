@@ -132,7 +132,7 @@ export default function Home() {
   };
 
   return (
-    <div className="flex justify-center items-center w-screen overflow-auto h-screen">
+    <div className="flex justify-center items-center w-screen overflow-auto min-h-screen">
       <motion.div
         variants={containerVariants}
         initial="hidden"
