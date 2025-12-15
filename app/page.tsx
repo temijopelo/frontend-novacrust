@@ -137,7 +137,7 @@ export default function Home() {
         variants={containerVariants}
         initial="hidden"
         animate="visible"
-        className="max-w-sm md:max-w-[640px] h-screen md:h-[758px] p-[30px] md:p-12 shadow-lg rounded-[30px] bg-white"
+        className="max-w-sm md:max-w-[640px] min-h-screen md:h-[758px] p-[30px] md:p-12 shadow-lg rounded-[30px] bg-white"
       >
         {/* Tab Navigation */}
         {currentStep === 1 && (
