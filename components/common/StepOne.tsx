@@ -67,8 +67,8 @@ const StepOne = ({ onNext }: { onNext: (data: any) => void }) => {
   };
 
   return (
-    <div className="h-full p-0 mt-8">
-      <form className="flex h-full  flex-col gap-3">
+    <div className=" mt-8">
+      <form className="flex flex-col gap-3">
         {/* You pay section */}
         <div>
           <div className="flex flex-col border-[#E0E0E0] border p-6 rounded-[30px]">
